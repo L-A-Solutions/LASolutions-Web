@@ -10,6 +10,7 @@ body {
     font-family: 'Inter', sans-serif;
     background-color: #faf9f7;
     color: #1c1c1c;
+    overflow-x: hidden;
 }
 
 /* ── HEADER ── */
@@ -267,7 +268,13 @@ section {
     max-width: 780px;
     margin: 0 auto;
     text-align: center;
+    
 }
+.header-container .contact-button {
+
+    color: #3054ff
+}
+    
 
     .page-hero h1 {
         font-family: 'EB Garamond', Georgia, serif;
@@ -734,5 +741,62 @@ footer {
 
     .s-card-number {
         font-size: 64px;
+    }
+}
+
+/* ── RESPONSIVE FOR CONTACT AND GENERAL ── */
+@media (max-width: 768px) {
+    .hero,
+    .page-hero {
+        padding: 80px 20px 60px;
+    }
+
+    section,
+    .contact-section {
+        padding: 60px 20px;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .section-divider {
+        margin: 0 20px;
+    }
+
+    footer {
+        padding: 20px;
+    }
+
+    .header-container {
+        padding: 8px 12px;
+        gap: 16px;
+    }
+
+    .menu a {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero,
+    .page-hero {
+        padding: 60px 16px 40px;
+    }
+
+    section,
+    .contact-section {
+        padding: 40px 16px;
+    }
+
+    .section-divider {
+        margin: 0 16px;
+    }
+
+    footer {
+        padding: 16px;
+        font-size: 12px;
     }
 }

@@ -3,7 +3,7 @@
 .profile-main {
     max-width: 780px;
     margin: 0 auto;
-    padding: 60px 40px 80px;
+    padding: 90px 40px 80px;
 }
 
 /* ── TOP SECTION: photo + intro ── */
@@ -160,4 +160,67 @@
     border: 1px solid #e0ddd9;
     border-radius: 4px;
     padding: 5px 14px;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 768px) {
+    .profile-main {
+        padding: 70px 20px 60px;
+    }
+
+    .profile-hero {
+        flex-direction: column;
+        gap: 32px;
+        text-align: center;
+    }
+
+    .profile-photo,
+    .linus-photo-wrap {
+        width: 120px;
+        height: 120px;
+    }
+
+    .profile-intro {
+        gap: 8px;
+    }
+
+    .profile-intro h1 {
+        font-size: 32px;
+    }
+
+    .profile-tagline {
+        max-width: none;
+    }
+
+    .edu-item {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .edu-year {
+        min-width: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-hero {
+        padding: 40px 0 40px;
+    }
+
+    .profile-main {
+        padding: 50px 16px 40px;
+    }
+
+    .profile-intro h1 {
+        font-size: 28px;
+    }
+
+    .skills-grid {
+        gap: 6px;
+    }
+
+    .skill-tag {
+        font-size: 12px;
+        padding: 4px 10px;
+    }
 }
