@@ -58,7 +58,7 @@ nav ul.menu {
 
 .menu a {
     text-decoration: none;
-    color: #4b4b4b;
+    color: #3a3a3a;
     font-size: 13px;
     font-weight: 500;
     padding: 6px 14px;
@@ -108,7 +108,7 @@ nav ul.menu {
     display: block;
     padding: 8px 14px;
     border-radius: 5px;
-    color: #4b4b4b;
+    color: #3a3a3a;
     font-size: 13px;
     font-weight: 500;
     text-decoration: none;
@@ -154,7 +154,7 @@ main {
 
     .hero p {
         font-size: 16px;
-        color: #6b6b6b;
+        color: #4f4f4f;
         line-height: 1.75;
         margin-bottom: 38px;
         max-width: 580px;
@@ -251,7 +251,7 @@ section {
 
     .card p {
         font-size: 13px;
-        color: #6b6b6b;
+        color: #4f4f4f;
         line-height: 1.7;
     }
 
@@ -293,7 +293,7 @@ section {
 
     .page-hero p {
         font-size: 16px;
-        color: #6b6b6b;
+        color: #4f4f4f;
         line-height: 1.75;
         max-width: 500px;
         margin: 0 auto;
@@ -302,14 +302,21 @@ section {
 /* ── CONTACT ── */
 .contact-section {
     padding: 80px 60px;
+    background-color: #f5f4f1;
 }
 
 .contact-grid {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    gap: 80px;
+    gap: 64px;
     max-width: 860px;
     margin: 0 auto;
+    align-items: start;
+}
+
+.contact-info {
+    position: sticky;
+    top: 100px;
 }
 
 .contact-info h2 {
@@ -326,6 +333,14 @@ section {
     flex-direction: column;
     gap: 3px;
     margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e0ddd9;
+}
+
+.info-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
 .info-label {
@@ -333,13 +348,13 @@ section {
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.8px;
-    color: #aaaaaa;
+    color: #717171;
 }
 
 .info-item a,
 .info-item span:not(.info-label) {
     font-size: 14px;
-    color: #4b4b4b;
+    color: #3a3a3a;
     text-decoration: none;
 }
 
@@ -352,6 +367,11 @@ section {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    background: #ffffff;
+    border: 1px solid #e0ddd9;
+    border-radius: 8px;
+    padding: 36px 40px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.05);
 }
 
 .form-group {
@@ -365,7 +385,7 @@ section {
         font-weight: 600;
         text-transform: uppercase;
         letter-spacing: 0.8px;
-        color: #aaaaaa;
+        color: #717171;
     }
 
     .form-group input,
@@ -392,18 +412,30 @@ section {
             border-color: #3054ff;
         }
 
-.contact-form .btn-primary {
+.contact-form button[type="submit"] {
     align-self: flex-start;
     cursor: pointer;
-    border: none;
     font-family: 'Inter', sans-serif;
+    background-color: #1c1c1c;
+    color: #efefef;
+    padding: 11px 26px;
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.18);
+    font-weight: 500;
+    font-size: 13px;
+    letter-spacing: 0.3px;
+    transition: background-color 0.25s;
+}
+
+.contact-form button[type="submit"]:hover {
+    background-color: #3a3a3a;
 }
 
 /* ── FOOTER ── */
 footer {
     padding: 28px 60px;
     text-align: center;
-    color: #aaaaaa;
+    color: #717171;
     font-size: 13px;
     border-top: 1px solid #e0ddd9;
 }
@@ -454,7 +486,7 @@ footer {
 .s-hero-sub {
     font-size: 15px;
     font-weight: 300;
-    color: #555555;
+    color: #444444;
     letter-spacing: 0.4px;
     font-family: 'Inter', sans-serif;
 }
@@ -560,7 +592,7 @@ footer {
     font-family: 'EB Garamond', Georgia, serif;
     font-size: 26px;
     font-weight: 500;
-    color: #504f4f;
+    color: #3a3a3a;
     letter-spacing: -0.3px;
     margin-bottom: 16px;
     line-height: 1.2;
@@ -568,7 +600,7 @@ footer {
 
 .s-card-desc {
     font-size: 13.5px;
-    color: #666666;
+    color: #505050;
     line-height: 1.75;
     margin-bottom: 28px;
     flex-grow: 1;
@@ -585,7 +617,7 @@ footer {
 
     .s-card-features li {
         font-size: 12.5px;
-        color: #555555;
+        color: #444444;
         line-height: 1.5;
         display: flex;
         gap: 10px;
@@ -669,7 +701,7 @@ footer {
 
 .s-cta-text p {
     font-size: 14px;
-    color: #666666;
+    color: #505050;
     line-height: 1.7;
     max-width: 440px;
 }
